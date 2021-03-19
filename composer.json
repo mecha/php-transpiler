@@ -1,0 +1,38 @@
+{
+  "name": "mecha/php-transpiler",
+  "description": "Compile PHP code to different versions",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miguel Muscat",
+      "email": "miguelmuscat93@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0 | ^9.0",
+    "vimeo/psalm": "^4.0",
+    "webmozart/path-util": "^2.3@stable",
+    "slevomat/coding-standard": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mecha\\PhpTranspiler\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mecha\\PhpTranspiler\\Test\\Func\\": "tests/func",
+      "Mecha\\PhpTranspiler\\Test\\Unit\\": "tests/unit",
+      "Mecha\\PhpTranspiler\\Test\\Helpers\\": "tests/helpers"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-initial": "0.1.x-dev"
+    }
+  }
+}
